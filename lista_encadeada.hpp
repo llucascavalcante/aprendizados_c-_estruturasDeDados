@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 struct cartaPokemon{
     string nomeCarta;
     int raridade;
@@ -17,7 +16,6 @@ void iniciaLista(listaPokemon &lista){
 }
 
 void insere_fim(listaPokemon &lista, string nomeCarta, int raridade){
-
     cartaPokemon *novo = new cartaPokemon;
     
     novo->nomeCarta = nomeCarta;
@@ -31,7 +29,7 @@ void insere_fim(listaPokemon &lista, string nomeCarta, int raridade){
 
     cartaPokemon *nav = lista.inicio;
     while(nav->proximo != NULL){
-        nav = nav->proximo;
+        nav = nav->proximo; //funciona como se fosse um i++, serve para avançar a lista
     }
     nav->proximo = novo;
 }
@@ -51,17 +49,4 @@ void imprimir(listaPokemon lista){
         cout<<"--------"<<endl;
         nav = nav->proximo;
     }
-}
-
-int main(){
-
-    listaPokemon lista;
-
-    iniciaLista(lista);
-    insere_fim(lista, "Pikachu", 90);
-    insere_fim(lista, "Charmander", 70);
-    imprimir(lista);
-
-
-    return 0;
 }
