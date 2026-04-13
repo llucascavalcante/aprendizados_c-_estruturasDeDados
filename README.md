@@ -1,2 +1,2 @@
-# aprendizados_c-_estruturasDeDados
+# aprendizados_estruturasDeDados_Listas
 códigos de exemplo 
