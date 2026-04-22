@@ -1,2 +1,2 @@
 # aprendizados_estruturasDeDados_Listas
-códigos de exemplo 
+Aprendizados sobre lista estática, encadeada e duplamente encadeada
